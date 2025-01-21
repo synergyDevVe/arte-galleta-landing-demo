@@ -8,6 +8,7 @@ import VideoCarousel from "@components/VideoCarousel/VideoCarousel";
 import logo from "@assets/images/arte-gallera-logo-2.png";
 
 import "./Events.css";
+import MoneyRain from "@components/MoneyRain/MoneyRain";
 
 const Events = () => {
   const dispatch = useDispatch();
@@ -28,10 +29,15 @@ const Events = () => {
           <img src={logo} alt="Arte Gallera Logo" />
         </div>
         <div className="events__content">
-          <div className=""></div>
-          <img src={logo} alt="Arte Gallera Logo" />
+          <div className="logo-img__container">
+            <MoneyRain />
+            <img src={logo} alt="Arte Gallera Logo" />
+          </div>
           <VideoCarousel videos={videos?.promotions} />
-          <img src={logo} alt="Arte Gallera Logo" />
+          <div className="logo-img__container">
+            <MoneyRain />
+            <img src={logo} alt="Arte Gallera Logo" />
+          </div>
         </div>
       </section>
     </>

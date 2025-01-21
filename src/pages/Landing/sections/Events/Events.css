@@ -51,8 +51,16 @@
 .events__header-info {
   text-align: center;
 }
+.logo-img__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
 
 @media (width > 992px) {
+
   .events__content img {
     display: block;
     width: 15%;

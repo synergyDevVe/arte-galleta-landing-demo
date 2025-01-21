@@ -1,0 +1,18 @@
+/* Estilo general */
+
+  
+  /* Contenedor para los billetes */
+
+  
+  /* Estilo de cada billete */
+  .money {
+    position: absolute;
+    top: -50px;
+    width: 50px;
+    height: 25px;
+    background-image: url("https://pngimg.com/uploads/money/money_PNG3500.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  
