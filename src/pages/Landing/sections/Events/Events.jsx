@@ -9,11 +9,11 @@ import logo from "@assets/images/arte-gallera-logo-2.png";
 
 import "./Events.css";
 import MoneyRain from "@components/MoneyRain/MoneyRain";
-
+import vid from "/uploads/asd.mp4"
 const Events = () => {
   const dispatch = useDispatch();
   const videos = useSelector((state) => state.videos.videos);
-
+  const arr  = [vid,vid,vid]
   useEffect(() => {
     dispatch(getPromotions());
   }, [dispatch]);
@@ -33,7 +33,7 @@ const Events = () => {
             <MoneyRain />
             <img src={logo} alt="Arte Gallera Logo" />
           </div>
-          <VideoCarousel videos={videos?.promotions} />
+          <VideoCarousel videos={arr} />
           <div className="logo-img__container">
             <MoneyRain />
             <img src={logo} alt="Arte Gallera Logo" />
