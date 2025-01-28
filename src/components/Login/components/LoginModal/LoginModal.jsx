@@ -10,6 +10,7 @@ import { login } from "@redux/features/authSlice";
 import { useSelector } from "react-redux";
 import Cookies from "js-cookie";
 import LoadingButton from "@mui/lab/LoadingButton";
+import { Link } from "react-router-dom";
 
 const LoginModal = ({ open, close }) => {
   const dispatch = useDispatch();
@@ -142,11 +143,16 @@ const LoginModal = ({ open, close }) => {
 
       <Modal
         title="Recuperar contraseña"
-        link="https://wa.me/message/REXMYSPMNN35L1"
+        link="hhttps://wa.me/524591087015"
         open={forgotPass}
         close={setForgotPass}
       >
-        Para recuperar tu contraseña comunícate al numero 569988979466 o dando
+        Para recuperar tu contraseña comunícate al numero <Link
+          sx={{ color: "#4362a5", textDecoration: "none" }}
+          href="https://wa.me/524591087015"
+        >
+          +52 1 459 108 7015
+        </Link>{" "} o dando
         clic en el siguiente enlace...
       </Modal>
     </>
